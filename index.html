@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://js.puter.com/v2/"></script>
+    <title>GASTO DA FOTO</title>
+</head>
+
+<body>
+    <!--DIV = caixa-->
+    <div>
+
+        <h1>📸Leitura de Notas</h1>
+        <br>
+        <p class="topo">Envie as notas e saiba quanto você gastou.</p>
+        <br>
+    </div>
+
+    <div class="caixa-total">
+
+        <p>Total gasto</p>
+        <h2 class="total-gasto">R$ 0,00</h2>
+
+
+    </div>
+
+    <!--INPUT = para selecionar imagens-->
+    <!--TIPO = arquivo / ACEITA = imagens-->
+    <label>
+        Clique aqui para enviar as notas
+        <input class="foto" onchange="lerFoto()" type="file" accept="image/*">
+
+    </label>
+    
+        <br>
+        <button id="btn-limpar" class="btn-limpar">Limpar</button>
+
+    <div class="lista"></div>
+    
+
+
+</body>
+<script src="scripts.js"></script>
+
+</html>

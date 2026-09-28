@@ -1,0 +1,139 @@
+/* O asterisco reseta os estilos que os navegadores coloram automaticamente*/
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Padding = espaçamento de dentro
+    Margin = espaçamento de fora */
+
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(238, 203, 198);
+    color: rgba(7, 7, 7, 0.747);
+    max-width: 520px;
+    margin: 0 auto;
+    /*Define a margem automática*/
+    padding: 24px;
+
+
+
+}
+
+h1 {
+
+    text-align: center;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+
+}
+
+.topo {
+    color: rgb(228, 28, 2);
+    font-size: 25px;
+    text-align: center;
+    margin: 16px;
+
+
+}
+
+/* Contêiner que alinha os dois botões lado a lado */
+.botoes-container {
+    display: flex;
+    justify-content: center;
+    /* Centraliza na tela */
+    align-items: center;
+    /* Alinha a altura de ambos */
+    gap: 32px;
+    /* Espaço de 12px entre os botões */
+    margin-top: 50px;
+}
+
+
+/* Estilo do Botão Limpar */
+.btn-limpar {
+    background-color: #ffffff;
+    color: #cc0000;
+    border: 1px solid #cc0000;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: block;
+}
+
+.btn-limpar:hover {
+    background-color: #cc0000;
+    color: #ffffff;
+}
+
+.caixa-total {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 18px;
+    font-size: 25px;
+    margin: 50px;
+
+}
+
+.total-gasto {
+    font-size: 49px;
+    font-weight: bold;
+    margin: 12px;
+
+}
+
+label {
+
+    background-color: white(247, 139, 139);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    /*BOLD = negrito*/
+    border: 2px dashed;
+    /*DASHED = deixa as bordas pontilhadas*/
+    display: block;
+    /*Faz com que aquela linha seja só para ele*/
+    margin: 55x;
+    cursor: pointer;
+    color: rgb(243, 7, 7);
+    font-size: 20px;
+}
+
+input {
+    display: none;
+}
+
+.lista {
+    margin-top: 20px;
+    color: rgb(241, 6, 6);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.comprovante {
+    background-color: #fdfafa;
+    border-radius: 14px;
+    padding: 16px;
+    margin-bottom: 12px;
+}
+
+.total-nota {
+    display: flex;
+    justify-content: space-between;
+    border-top: 3px dashed #eceef1;
+    padding-top: 12px;
+    margin-top: 12px;
+    font-size: 20px;
+    color: #914e4e;
+    font-weight: bold;
+}
